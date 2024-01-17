@@ -1,0 +1,11 @@
+# MoonlogsRuby::InlineResponse2001
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**success** | **BOOLEAN** |  | 
+**code** | **Integer** |  | 
+**error** | **String** |  | 
+**data** | [**Schema**](Schema.md) |  | 
+**meta** | [**Meta**](Meta.md) |  | 
+
