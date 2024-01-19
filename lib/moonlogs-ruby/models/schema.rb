@@ -27,7 +27,7 @@ module MoonlogsRuby
 
     attr_accessor :tags
 
-    attr_accessor :retention_time
+    attr_accessor :retention_days
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
@@ -39,7 +39,7 @@ module MoonlogsRuby
         :'fields' => :'fields',
         :'kinds' => :'kinds',
         :'tags' => :'tags',
-        :'retention_time' => :'retention_time'
+        :'retention_days' => :'retention_days'
       }
     end
 
@@ -53,7 +53,7 @@ module MoonlogsRuby
         :'fields' => :'Object',
         :'kinds' => :'Object',
         :'tags' => :'Object',
-        :'retention_time' => :'Object'
+        :'retention_days' => :'Object'
       }
     end
 
@@ -112,8 +112,8 @@ module MoonlogsRuby
         end
       end
 
-      if attributes.key?(:'retention_time')
-        self.retention_time = attributes[:'retention_time']
+      if attributes.key?(:'retention_days')
+        self.retention_days = attributes[:'retention_days']
       end
     end
 
@@ -172,7 +172,7 @@ module MoonlogsRuby
           fields == o.fields &&
           kinds == o.kinds &&
           tags == o.tags &&
-          retention_time == o.retention_time
+          retention_days == o.retention_days
     end
 
     # @see the `==` method
@@ -184,7 +184,7 @@ module MoonlogsRuby
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [id, title, description, name, fields, kinds, tags, retention_time].hash
+      [id, title, description, name, fields, kinds, tags, retention_days].hash
     end
 
     # Builds the object from hash
