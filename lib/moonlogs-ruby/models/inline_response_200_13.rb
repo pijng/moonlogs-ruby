@@ -12,52 +12,36 @@ Swagger Codegen version: 3.0.52
 require 'date'
 
 module MoonlogsRuby
-  class Record
-    attr_accessor :id
+  class InlineResponse20013
+    attr_accessor :success
 
-    attr_accessor :text
+    attr_accessor :code
 
-    attr_accessor :schema_name
+    attr_accessor :error
 
-    attr_accessor :schema_id
+    attr_accessor :data
 
-    attr_accessor :query
-
-    attr_accessor :kind
-
-    attr_accessor :created_at
-
-    attr_accessor :group_hash
-
-    attr_accessor :level
+    attr_accessor :meta
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'id' => :'id',
-        :'text' => :'text',
-        :'schema_name' => :'schema_name',
-        :'schema_id' => :'schema_id',
-        :'query' => :'query',
-        :'kind' => :'kind',
-        :'created_at' => :'created_at',
-        :'group_hash' => :'group_hash',
-        :'level' => :'level'
+        :'success' => :'success',
+        :'code' => :'code',
+        :'error' => :'error',
+        :'data' => :'data',
+        :'meta' => :'meta'
       }
     end
 
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'id' => :'Object',
-        :'text' => :'Object',
-        :'schema_name' => :'Object',
-        :'schema_id' => :'Object',
-        :'query' => :'Object',
-        :'kind' => :'Object',
-        :'created_at' => :'Object',
-        :'group_hash' => :'Object',
-        :'level' => :'Object'
+        :'success' => :'Object',
+        :'code' => :'Object',
+        :'error' => :'Object',
+        :'data' => :'Object',
+        :'meta' => :'Object'
       }
     end
 
@@ -71,51 +55,35 @@ module MoonlogsRuby
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::Record` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::InlineResponse20013` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::Record`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::InlineResponse20013`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
 
-      if attributes.key?(:'id')
-        self.id = attributes[:'id']
+      if attributes.key?(:'success')
+        self.success = attributes[:'success']
       end
 
-      if attributes.key?(:'text')
-        self.text = attributes[:'text']
+      if attributes.key?(:'code')
+        self.code = attributes[:'code']
       end
 
-      if attributes.key?(:'schema_name')
-        self.schema_name = attributes[:'schema_name']
+      if attributes.key?(:'error')
+        self.error = attributes[:'error']
       end
 
-      if attributes.key?(:'schema_id')
-        self.schema_id = attributes[:'schema_id']
+      if attributes.key?(:'data')
+        self.data = attributes[:'data']
       end
 
-      if attributes.key?(:'query')
-        self.query = attributes[:'query']
-      end
-
-      if attributes.key?(:'kind')
-        self.kind = attributes[:'kind']
-      end
-
-      if attributes.key?(:'created_at')
-        self.created_at = attributes[:'created_at']
-      end
-
-      if attributes.key?(:'group_hash')
-        self.group_hash = attributes[:'group_hash']
-      end
-
-      if attributes.key?(:'level')
-        self.level = attributes[:'level']
+      if attributes.key?(:'meta')
+        self.meta = attributes[:'meta']
       end
     end
 
@@ -123,24 +91,24 @@ module MoonlogsRuby
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @id.nil?
-        invalid_properties.push('invalid value for "id", id cannot be nil.')
+      if @success.nil?
+        invalid_properties.push('invalid value for "success", success cannot be nil.')
       end
 
-      if @text.nil?
-        invalid_properties.push('invalid value for "text", text cannot be nil.')
+      if @code.nil?
+        invalid_properties.push('invalid value for "code", code cannot be nil.')
       end
 
-      if @schema_name.nil?
-        invalid_properties.push('invalid value for "schema_name", schema_name cannot be nil.')
+      if @error.nil?
+        invalid_properties.push('invalid value for "error", error cannot be nil.')
       end
 
-      if @query.nil?
-        invalid_properties.push('invalid value for "query", query cannot be nil.')
+      if @data.nil?
+        invalid_properties.push('invalid value for "data", data cannot be nil.')
       end
 
-      if @kind.nil?
-        invalid_properties.push('invalid value for "kind", kind cannot be nil.')
+      if @meta.nil?
+        invalid_properties.push('invalid value for "meta", meta cannot be nil.')
       end
 
       invalid_properties
@@ -149,11 +117,11 @@ module MoonlogsRuby
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @id.nil?
-      return false if @text.nil?
-      return false if @schema_name.nil?
-      return false if @query.nil?
-      return false if @kind.nil?
+      return false if @success.nil?
+      return false if @code.nil?
+      return false if @error.nil?
+      return false if @data.nil?
+      return false if @meta.nil?
       true
     end
 
@@ -162,15 +130,11 @@ module MoonlogsRuby
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          id == o.id &&
-          text == o.text &&
-          schema_name == o.schema_name &&
-          schema_id == o.schema_id &&
-          query == o.query &&
-          kind == o.kind &&
-          created_at == o.created_at &&
-          group_hash == o.group_hash &&
-          level == o.level
+          success == o.success &&
+          code == o.code &&
+          error == o.error &&
+          data == o.data &&
+          meta == o.meta
     end
 
     # @see the `==` method
@@ -182,7 +146,7 @@ module MoonlogsRuby
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [id, text, schema_name, schema_id, query, kind, created_at, group_hash, level].hash
+      [success, code, error, data, meta].hash
     end
 
     # Builds the object from hash

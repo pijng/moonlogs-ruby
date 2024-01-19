@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **success** | **BOOLEAN** |  | 
 **code** | **Integer** |  | 
 **error** | **String** |  | 
-**data** | [**Record**](Record.md) |  | 
+**data** | [**Array&lt;Record&gt;**](Record.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
 

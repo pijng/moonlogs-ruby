@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **success** | **BOOLEAN** |  | 
 **code** | **Integer** |  | 
 **error** | **String** |  | 
-**data** | [**User**](User.md) |  | 
+**data** | [**Array&lt;User&gt;**](User.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
 

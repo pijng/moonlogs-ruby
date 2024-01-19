@@ -1,4 +1,4 @@
-# MoonlogsRuby::InlineResponse20012
+# MoonlogsRuby::InlineResponse20013
 
 ## Properties
 Name | Type | Description | Notes
@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **success** | **BOOLEAN** |  | 
 **code** | **Integer** |  | 
 **error** | **String** |  | 
-**data** | [**Array&lt;Tag&gt;**](Tag.md) |  | 
+**data** | [**Tag**](Tag.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
 

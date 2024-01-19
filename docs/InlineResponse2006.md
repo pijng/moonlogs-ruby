@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **success** | **BOOLEAN** |  | 
 **code** | **Integer** |  | 
 **error** | **String** |  | 
-**data** | **Integer** | Deleted User&#x27;s ID | 
+**data** | [**User**](User.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
 

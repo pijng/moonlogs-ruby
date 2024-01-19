@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**api_logs_post**](DefaultApi.md#api_logs_post) | **POST** /api/logs | 
 [**api_logs_search_post**](DefaultApi.md#api_logs_search_post) | **POST** /api/logs/search | 
 [**api_schemas_get**](DefaultApi.md#api_schemas_get) | **GET** /api/schemas | 
+[**api_schemas_id_delete**](DefaultApi.md#api_schemas_id_delete) | **DELETE** /api/schemas/{id} | 
 [**api_schemas_id_get**](DefaultApi.md#api_schemas_id_get) | **GET** /api/schemas/{id} | 
 [**api_schemas_id_put**](DefaultApi.md#api_schemas_id_put) | **PUT** /api/schemas/{id} | 
 [**api_schemas_post**](DefaultApi.md#api_schemas_post) | **POST** /api/schemas | 
@@ -34,7 +35,7 @@ Method | HTTP request | Description
 [**api_users_post**](DefaultApi.md#api_users_post) | **POST** /api/users | 
 
 # **api_api_tokens_get**
-> InlineResponse2008 api_api_tokens_get
+> InlineResponse2009 api_api_tokens_get
 
 
 
@@ -61,7 +62,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 
@@ -75,7 +76,7 @@ This endpoint does not need any parameter.
 
 
 # **api_api_tokens_id_delete**
-> InlineResponse20010 api_api_tokens_id_delete(id)
+> InlineResponse20011 api_api_tokens_id_delete(id)
 
 
 
@@ -107,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 
@@ -121,7 +122,7 @@ Name | Type | Description  | Notes
 
 
 # **api_api_tokens_id_get**
-> InlineResponse2009 api_api_tokens_id_get(id)
+> InlineResponse20010 api_api_tokens_id_get(id)
 
 
 
@@ -153,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -167,7 +168,7 @@ Name | Type | Description  | Notes
 
 
 # **api_api_tokens_id_put**
-> InlineResponse2009 api_api_tokens_id_put(id, opts)
+> InlineResponse20010 api_api_tokens_id_put(id, opts)
 
 
 
@@ -202,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -216,7 +217,7 @@ Name | Type | Description  | Notes
 
 
 # **api_api_tokens_post**
-> InlineResponse2009 api_api_tokens_post(opts)
+> InlineResponse20010 api_api_tokens_post(opts)
 
 
 
@@ -249,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -263,7 +264,7 @@ Name | Type | Description  | Notes
 
 
 # **api_logs_get**
-> InlineResponse2002 api_logs_get
+> InlineResponse2003 api_logs_get(opts)
 
 
 
@@ -276,9 +277,13 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  page: 56, # Integer | 
+  limit: 56 # Integer | 
+}
 
 begin
-  result = api_instance.api_logs_get
+  result = api_instance.api_logs_get(opts)
   p result
 rescue MoonlogsRuby::ApiError => e
   puts "Exception when calling DefaultApi->api_logs_get: #{e}"
@@ -286,11 +291,15 @@ end
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Integer**|  | [optional] 
+ **limit** | **Integer**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
@@ -304,7 +313,7 @@ This endpoint does not need any parameter.
 
 
 # **api_logs_group_schema_name_hash_get**
-> InlineResponse2002 api_logs_group_schema_name_hash_get(schema_name, hash)
+> InlineResponse2003 api_logs_group_schema_name_hash_get(schema_name, hash)
 
 
 
@@ -338,7 +347,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
@@ -352,7 +361,7 @@ Name | Type | Description  | Notes
 
 
 # **api_logs_id_get**
-> InlineResponse2003 api_logs_id_get(id)
+> InlineResponse2004 api_logs_id_get(id)
 
 
 
@@ -365,7 +374,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 'id_example' # String | 
+id = 56 # Integer | 
 
 
 begin
@@ -380,11 +389,11 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+ **id** | **Integer**|  | 
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -398,7 +407,7 @@ Name | Type | Description  | Notes
 
 
 # **api_logs_post**
-> InlineResponse2003 api_logs_post(opts)
+> InlineResponse2004 api_logs_post(opts)
 
 
 
@@ -431,7 +440,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -445,7 +454,7 @@ Name | Type | Description  | Notes
 
 
 # **api_logs_search_post**
-> InlineResponse2002 api_logs_search_post(opts)
+> InlineResponse2003 api_logs_search_post(opts)
 
 
 
@@ -460,8 +469,8 @@ end
 api_instance = MoonlogsRuby::DefaultApi.new
 opts = { 
   body: MoonlogsRuby::Record.new # Record | 
-  page: 'page_example' # String | 
-  limit: 'limit_example' # String | 
+  page: 56 # Integer | 
+  limit: 56 # Integer | 
 }
 
 begin
@@ -477,12 +486,12 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**Record**](Record.md)|  | [optional] 
- **page** | **String**|  | [optional] 
- **limit** | **String**|  | [optional] 
+ **page** | **Integer**|  | [optional] 
+ **limit** | **Integer**|  | [optional] 
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
@@ -536,6 +545,52 @@ This endpoint does not need any parameter.
 
 
 
+# **api_schemas_id_delete**
+> InlineResponse2002 api_schemas_id_delete(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.api_schemas_id_delete(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->api_schemas_id_delete: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
 # **api_schemas_id_get**
 > InlineResponse2001 api_schemas_id_get(id)
 
@@ -550,7 +605,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 'id_example' # String | 
+id = 56 # Integer | 
 
 
 begin
@@ -565,7 +620,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+ **id** | **Integer**|  | 
 
 ### Return type
 
@@ -596,7 +651,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 'id_example' # String | 
+id = 56 # Integer | 
 opts = { 
   body: MoonlogsRuby::Schema.new # Schema | 
 }
@@ -613,7 +668,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+ **id** | **Integer**|  | 
  **body** | [**Schema**](Schema.md)|  | [optional] 
 
 ### Return type
@@ -726,7 +781,7 @@ Name | Type | Description  | Notes
 
 
 # **api_session_get**
-> InlineResponse2007 api_session_get
+> InlineResponse2008 api_session_get
 
 
 
@@ -750,7 +805,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 
@@ -764,7 +819,7 @@ No authorization required
 
 
 # **api_session_post**
-> InlineResponse2007 api_session_post(opts)
+> InlineResponse2008 api_session_post(opts)
 
 
 
@@ -794,7 +849,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 
@@ -852,7 +907,7 @@ No authorization required
 
 
 # **api_tags_get**
-> InlineResponse20011 api_tags_get
+> InlineResponse20012 api_tags_get
 
 
 
@@ -879,7 +934,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 
@@ -893,7 +948,7 @@ This endpoint does not need any parameter.
 
 
 # **api_tags_id_delete**
-> InlineResponse20010 api_tags_id_delete(id)
+> InlineResponse20011 api_tags_id_delete(id)
 
 
 
@@ -925,7 +980,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 
@@ -939,7 +994,7 @@ Name | Type | Description  | Notes
 
 
 # **api_tags_id_get**
-> InlineResponse20012 api_tags_id_get(id)
+> InlineResponse20013 api_tags_id_get(id)
 
 
 
@@ -971,7 +1026,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
@@ -985,7 +1040,7 @@ Name | Type | Description  | Notes
 
 
 # **api_tags_id_put**
-> InlineResponse20012 api_tags_id_put(id, opts)
+> InlineResponse20013 api_tags_id_put(id, opts)
 
 
 
@@ -1020,7 +1075,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
@@ -1034,7 +1089,7 @@ Name | Type | Description  | Notes
 
 
 # **api_tags_post**
-> InlineResponse20012 api_tags_post(opts)
+> InlineResponse20013 api_tags_post(opts)
 
 
 
@@ -1067,7 +1122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
@@ -1081,7 +1136,7 @@ Name | Type | Description  | Notes
 
 
 # **api_users_get**
-> InlineResponse2004 api_users_get
+> InlineResponse2005 api_users_get
 
 
 
@@ -1108,7 +1163,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
@@ -1122,7 +1177,7 @@ This endpoint does not need any parameter.
 
 
 # **api_users_id_delete**
-> InlineResponse2006 api_users_id_delete(id)
+> InlineResponse2007 api_users_id_delete(id)
 
 
 
@@ -1135,7 +1190,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 'id_example' # String | 
+id = 56 # Integer | 
 
 
 begin
@@ -1150,7 +1205,53 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+ **id** | **Integer**|  | 
+
+### Return type
+
+[**InlineResponse2007**](InlineResponse2007.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **api_users_id_get**
+> InlineResponse2006 api_users_id_get(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.api_users_id_get(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->api_users_id_get: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
 
 ### Return type
 
@@ -1167,54 +1268,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_users_id_get**
-> InlineResponse2005 api_users_id_get(id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-id = 'id_example' # String | 
-
-
-begin
-  result = api_instance.api_users_id_get(id)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_users_id_get: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
-
-### Return type
-
-[**InlineResponse2005**](InlineResponse2005.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
 # **api_users_id_put**
-> InlineResponse2005 api_users_id_put(id, opts)
+> InlineResponse2006 api_users_id_put(id, opts)
 
 
 
@@ -1227,7 +1282,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 'id_example' # String | 
+id = 56 # Integer | 
 opts = { 
   body: MoonlogsRuby::User.new # User | 
 }
@@ -1244,12 +1299,12 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+ **id** | **Integer**|  | 
  **body** | [**User**](User.md)|  | [optional] 
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
@@ -1263,7 +1318,7 @@ Name | Type | Description  | Notes
 
 
 # **api_users_post**
-> InlineResponse2005 api_users_post(opts)
+> InlineResponse2006 api_users_post(opts)
 
 
 
@@ -1296,7 +1351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
