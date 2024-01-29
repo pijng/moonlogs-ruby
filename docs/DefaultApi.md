@@ -19,7 +19,6 @@ Method | HTTP request | Description
 [**api_schemas_id_get**](DefaultApi.md#api_schemas_id_get) | **GET** /api/schemas/{id} | 
 [**api_schemas_id_put**](DefaultApi.md#api_schemas_id_put) | **PUT** /api/schemas/{id} | 
 [**api_schemas_post**](DefaultApi.md#api_schemas_post) | **POST** /api/schemas | 
-[**api_schemas_search_post**](DefaultApi.md#api_schemas_search_post) | **POST** /api/schemas/search | 
 [**api_session_get**](DefaultApi.md#api_session_get) | **GET** /api/session | 
 [**api_session_post**](DefaultApi.md#api_session_post) | **POST** /api/session | 
 [**api_setup_register_admin_post**](DefaultApi.md#api_setup_register_admin_post) | **POST** /api/setup/register_admin | 
@@ -721,53 +720,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **api_schemas_search_post**
-> InlineResponse200 api_schemas_search_post(opts)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::SchemaSearch.new # SchemaSearch | 
-}
-
-begin
-  result = api_instance.api_schemas_search_post(opts)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_schemas_search_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**SchemaSearch**](SchemaSearch.md)|  | [optional] 
-
-### Return type
-
-[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 

@@ -12,17 +12,16 @@ Swagger Codegen version: 3.0.52
 require 'date'
 
 module MoonlogsRuby
-  class UserRole
+  class Role
     MEMBER = 'Member'.freeze
     ADMIN = 'Admin'.freeze
-    SYSTEM = 'System'.freeze
 
     # Builds the enum from string
     # @param [String] The enum value in the form of the string
     # @return [String] The enum value
     def build_from_hash(value)
-      constantValues = UserRole.constants.select { |c| UserRole::const_get(c) == value }
-      raise "Invalid ENUM value #{value} for class #UserRole" if constantValues.empty?
+      constantValues = Role.constants.select { |c| Role::const_get(c) == value }
+      raise "Invalid ENUM value #{value} for class #Role" if constantValues.empty?
       value
     end
   end
