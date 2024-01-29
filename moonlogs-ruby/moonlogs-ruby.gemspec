@@ -18,9 +18,9 @@ Gem::Specification.new do |s|
   s.name        = "moonlogs-ruby"
   s.version     = MoonlogsRuby::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Swagger-Codegen"]
+  s.authors     = ["pijng"]
   s.email       = ["shalpack@gmail.com"]
-  s.homepage    = "https://github.com/swagger-api/swagger-codegen"
+  s.homepage    = "https://github.com/pijng/moonlogs-ruby"
   s.summary     = "Moonlogs Ruby Gem"
   s.description = "Moonlogs API"
   s.license     = "Unlicense"
