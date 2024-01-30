@@ -11,4 +11,5 @@ Name | Type | Description | Notes
 **role** | [**OneOfUserRole**](OneOfUserRole.md) |  | 
 **tags** | [**Array&lt;BigDecimal&gt;**](BigDecimal.md) |  | 
 **token** | **String** |  | [optional] 
+**is_revoked** | **BOOLEAN** |  | 
 
