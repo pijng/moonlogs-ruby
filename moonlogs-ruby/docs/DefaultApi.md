@@ -470,6 +470,8 @@ opts = {
   body: MoonlogsRuby::Record.new # Record | 
   page: 56 # Integer | 
   limit: 56 # Integer | 
+  from: 'from_example' # String | Time in format \"YYYY-DD-MMTHH:SS\"
+  to: 'to_example' # String | Time in format \"YYYY-DD-MMTHH:SS\"
 }
 
 begin
@@ -487,6 +489,8 @@ Name | Type | Description  | Notes
  **body** | [**Record**](Record.md)|  | [optional] 
  **page** | **Integer**|  | [optional] 
  **limit** | **Integer**|  | [optional] 
+ **from** | **String**| Time in format \&quot;YYYY-DD-MMTHH:SS\&quot; | [optional] 
+ **to** | **String**| Time in format \&quot;YYYY-DD-MMTHH:SS\&quot; | [optional] 
 
 ### Return type
 
