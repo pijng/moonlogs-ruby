@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/swagger-api/swagger-codegen"
   s.summary     = "Moonlogs Ruby Gem"
   s.description = "Moonlogs API"
-  s.license     = "Unlicense"
+  s.license     = 'Apache-2.0'
   s.required_ruby_version = ">= 1.9"
 
   s.add_runtime_dependency 'typhoeus', '~> 1.0', '>= 1.0.1'
