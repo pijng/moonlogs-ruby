@@ -41,6 +41,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
 
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: CD to inner moonlogs-ruby
+        run: |
+          cd moonlogs-ruby
+
       - name: Publish gem
         uses: dawidd6/action-publish-gem@v1
         with:
