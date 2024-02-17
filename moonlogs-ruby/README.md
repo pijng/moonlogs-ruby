@@ -1,3 +1,6 @@
+[![Generate and Publish Ruby Client](https://github.com/pijng/moonlogs-ruby/actions/workflows/release.yml/badge.svg)](https://github.com/pijng/moonlogs-ruby/actions/workflows/release.yml)
+
+
 # moonlogs-ruby
 
 MoonlogsRuby - the Ruby gem for the Moonlogs
@@ -70,7 +73,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -84,7 +87,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -98,9 +101,9 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-opts = { 
-  body: MoonlogsRuby::ApiToken.new # ApiToken | 
+id = 56 # Integer |
+opts = {
+  body: MoonlogsRuby::ApiToken.new # ApiToken |
 }
 
 begin
@@ -114,8 +117,8 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::ApiToken.new # ApiToken | 
+opts = {
+  body: MoonlogsRuby::ApiToken.new # ApiToken |
 }
 
 begin
@@ -129,9 +132,9 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  page: 56, # Integer | 
-  limit: 56 # Integer | 
+opts = {
+  page: 56, # Integer |
+  limit: 56 # Integer |
 }
 
 begin
@@ -145,8 +148,8 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-schema_name = 'schema_name_example' # String | 
-hash = 'hash_example' # String | 
+schema_name = 'schema_name_example' # String |
+hash = 'hash_example' # String |
 
 
 begin
@@ -160,7 +163,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -174,8 +177,8 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::Record.new # Record | 
+opts = {
+  body: MoonlogsRuby::Record.new # Record |
 }
 
 begin
@@ -189,10 +192,10 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::Record.new, # Record | 
-  page: 56, # Integer | 
-  limit: 56, # Integer | 
+opts = {
+  body: MoonlogsRuby::Record.new, # Record |
+  page: 56, # Integer |
+  limit: 56, # Integer |
   from: 'from_example', # String | Time in format \"YYYY-DD-MMTHH:SS\"
   to: 'to_example' # String | Time in format \"YYYY-DD-MMTHH:SS\"
 }
@@ -220,7 +223,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -234,7 +237,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -248,9 +251,9 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-opts = { 
-  body: MoonlogsRuby::Schema.new # Schema | 
+id = 56 # Integer |
+opts = {
+  body: MoonlogsRuby::Schema.new # Schema |
 }
 
 begin
@@ -264,8 +267,8 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::Schema.new # Schema | 
+opts = {
+  body: MoonlogsRuby::Schema.new # Schema |
 }
 
 begin
@@ -285,8 +288,8 @@ rescue MoonlogsRuby::ApiError => e
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::Credentials.new # Credentials | 
+opts = {
+  body: MoonlogsRuby::Credentials.new # Credentials |
 }
 
 begin
@@ -297,8 +300,8 @@ rescue MoonlogsRuby::ApiError => e
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::User.new # User | 
+opts = {
+  body: MoonlogsRuby::User.new # User |
 }
 
 begin
@@ -324,7 +327,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -338,7 +341,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -352,9 +355,9 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-opts = { 
-  body: MoonlogsRuby::Tag.new # Tag | 
+id = 56 # Integer |
+opts = {
+  body: MoonlogsRuby::Tag.new # Tag |
 }
 
 begin
@@ -368,8 +371,8 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::Tag.new # Tag | 
+opts = {
+  body: MoonlogsRuby::Tag.new # Tag |
 }
 
 begin
@@ -395,7 +398,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -409,7 +412,7 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
+id = 56 # Integer |
 
 
 begin
@@ -423,9 +426,9 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-opts = { 
-  body: MoonlogsRuby::User.new # User | 
+id = 56 # Integer |
+opts = {
+  body: MoonlogsRuby::User.new # User |
 }
 
 begin
@@ -439,8 +442,8 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::User.new # User | 
+opts = {
+  body: MoonlogsRuby::User.new # User |
 }
 
 begin
@@ -457,34 +460,34 @@ All URIs are relative to */*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*MoonlogsRuby::DefaultApi* | [**api_api_tokens_get**](docs/DefaultApi.md#api_api_tokens_get) | **GET** /api/api_tokens | 
-*MoonlogsRuby::DefaultApi* | [**api_api_tokens_id_delete**](docs/DefaultApi.md#api_api_tokens_id_delete) | **DELETE** /api/api_tokens/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_api_tokens_id_get**](docs/DefaultApi.md#api_api_tokens_id_get) | **GET** /api/api_tokens/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_api_tokens_id_put**](docs/DefaultApi.md#api_api_tokens_id_put) | **PUT** /api/api_tokens/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_api_tokens_post**](docs/DefaultApi.md#api_api_tokens_post) | **POST** /api/api_tokens | 
-*MoonlogsRuby::DefaultApi* | [**api_logs_get**](docs/DefaultApi.md#api_logs_get) | **GET** /api/logs | 
-*MoonlogsRuby::DefaultApi* | [**api_logs_group_schema_name_hash_get**](docs/DefaultApi.md#api_logs_group_schema_name_hash_get) | **GET** /api/logs/group/{schema_name}/{hash} | 
-*MoonlogsRuby::DefaultApi* | [**api_logs_id_get**](docs/DefaultApi.md#api_logs_id_get) | **GET** /api/logs/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_logs_post**](docs/DefaultApi.md#api_logs_post) | **POST** /api/logs | 
-*MoonlogsRuby::DefaultApi* | [**api_logs_search_post**](docs/DefaultApi.md#api_logs_search_post) | **POST** /api/logs/search | 
-*MoonlogsRuby::DefaultApi* | [**api_schemas_get**](docs/DefaultApi.md#api_schemas_get) | **GET** /api/schemas | 
-*MoonlogsRuby::DefaultApi* | [**api_schemas_id_delete**](docs/DefaultApi.md#api_schemas_id_delete) | **DELETE** /api/schemas/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_schemas_id_get**](docs/DefaultApi.md#api_schemas_id_get) | **GET** /api/schemas/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_schemas_id_put**](docs/DefaultApi.md#api_schemas_id_put) | **PUT** /api/schemas/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_schemas_post**](docs/DefaultApi.md#api_schemas_post) | **POST** /api/schemas | 
-*MoonlogsRuby::DefaultApi* | [**api_session_get**](docs/DefaultApi.md#api_session_get) | **GET** /api/session | 
-*MoonlogsRuby::DefaultApi* | [**api_session_post**](docs/DefaultApi.md#api_session_post) | **POST** /api/session | 
-*MoonlogsRuby::DefaultApi* | [**api_setup_register_admin_post**](docs/DefaultApi.md#api_setup_register_admin_post) | **POST** /api/setup/register_admin | 
-*MoonlogsRuby::DefaultApi* | [**api_tags_get**](docs/DefaultApi.md#api_tags_get) | **GET** /api/tags | 
-*MoonlogsRuby::DefaultApi* | [**api_tags_id_delete**](docs/DefaultApi.md#api_tags_id_delete) | **DELETE** /api/tags/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_tags_id_get**](docs/DefaultApi.md#api_tags_id_get) | **GET** /api/tags/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_tags_id_put**](docs/DefaultApi.md#api_tags_id_put) | **PUT** /api/tags/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_tags_post**](docs/DefaultApi.md#api_tags_post) | **POST** /api/tags | 
-*MoonlogsRuby::DefaultApi* | [**api_users_get**](docs/DefaultApi.md#api_users_get) | **GET** /api/users | 
-*MoonlogsRuby::DefaultApi* | [**api_users_id_delete**](docs/DefaultApi.md#api_users_id_delete) | **DELETE** /api/users/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_users_id_get**](docs/DefaultApi.md#api_users_id_get) | **GET** /api/users/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_users_id_put**](docs/DefaultApi.md#api_users_id_put) | **PUT** /api/users/{id} | 
-*MoonlogsRuby::DefaultApi* | [**api_users_post**](docs/DefaultApi.md#api_users_post) | **POST** /api/users | 
+*MoonlogsRuby::DefaultApi* | [**api_api_tokens_get**](docs/DefaultApi.md#api_api_tokens_get) | **GET** /api/api_tokens |
+*MoonlogsRuby::DefaultApi* | [**api_api_tokens_id_delete**](docs/DefaultApi.md#api_api_tokens_id_delete) | **DELETE** /api/api_tokens/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_api_tokens_id_get**](docs/DefaultApi.md#api_api_tokens_id_get) | **GET** /api/api_tokens/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_api_tokens_id_put**](docs/DefaultApi.md#api_api_tokens_id_put) | **PUT** /api/api_tokens/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_api_tokens_post**](docs/DefaultApi.md#api_api_tokens_post) | **POST** /api/api_tokens |
+*MoonlogsRuby::DefaultApi* | [**api_logs_get**](docs/DefaultApi.md#api_logs_get) | **GET** /api/logs |
+*MoonlogsRuby::DefaultApi* | [**api_logs_group_schema_name_hash_get**](docs/DefaultApi.md#api_logs_group_schema_name_hash_get) | **GET** /api/logs/group/{schema_name}/{hash} |
+*MoonlogsRuby::DefaultApi* | [**api_logs_id_get**](docs/DefaultApi.md#api_logs_id_get) | **GET** /api/logs/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_logs_post**](docs/DefaultApi.md#api_logs_post) | **POST** /api/logs |
+*MoonlogsRuby::DefaultApi* | [**api_logs_search_post**](docs/DefaultApi.md#api_logs_search_post) | **POST** /api/logs/search |
+*MoonlogsRuby::DefaultApi* | [**api_schemas_get**](docs/DefaultApi.md#api_schemas_get) | **GET** /api/schemas |
+*MoonlogsRuby::DefaultApi* | [**api_schemas_id_delete**](docs/DefaultApi.md#api_schemas_id_delete) | **DELETE** /api/schemas/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_schemas_id_get**](docs/DefaultApi.md#api_schemas_id_get) | **GET** /api/schemas/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_schemas_id_put**](docs/DefaultApi.md#api_schemas_id_put) | **PUT** /api/schemas/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_schemas_post**](docs/DefaultApi.md#api_schemas_post) | **POST** /api/schemas |
+*MoonlogsRuby::DefaultApi* | [**api_session_get**](docs/DefaultApi.md#api_session_get) | **GET** /api/session |
+*MoonlogsRuby::DefaultApi* | [**api_session_post**](docs/DefaultApi.md#api_session_post) | **POST** /api/session |
+*MoonlogsRuby::DefaultApi* | [**api_setup_register_admin_post**](docs/DefaultApi.md#api_setup_register_admin_post) | **POST** /api/setup/register_admin |
+*MoonlogsRuby::DefaultApi* | [**api_tags_get**](docs/DefaultApi.md#api_tags_get) | **GET** /api/tags |
+*MoonlogsRuby::DefaultApi* | [**api_tags_id_delete**](docs/DefaultApi.md#api_tags_id_delete) | **DELETE** /api/tags/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_tags_id_get**](docs/DefaultApi.md#api_tags_id_get) | **GET** /api/tags/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_tags_id_put**](docs/DefaultApi.md#api_tags_id_put) | **PUT** /api/tags/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_tags_post**](docs/DefaultApi.md#api_tags_post) | **POST** /api/tags |
+*MoonlogsRuby::DefaultApi* | [**api_users_get**](docs/DefaultApi.md#api_users_get) | **GET** /api/users |
+*MoonlogsRuby::DefaultApi* | [**api_users_id_delete**](docs/DefaultApi.md#api_users_id_delete) | **DELETE** /api/users/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_users_id_get**](docs/DefaultApi.md#api_users_id_get) | **GET** /api/users/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_users_id_put**](docs/DefaultApi.md#api_users_id_put) | **PUT** /api/users/{id} |
+*MoonlogsRuby::DefaultApi* | [**api_users_post**](docs/DefaultApi.md#api_users_post) | **POST** /api/users |
 
 ## Documentation for Models
 
