@@ -44,12 +44,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: CD to inner moonlogs-ruby
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install Gem Dependencies
+        run: bundle install
+
+      - name: Build and publish Gem
         run: |
           cd moonlogs-ruby
-
-      - name: Publish gem
-        uses: dawidd6/action-publish-gem@v1
-        with:
-          api_key: ${{secrets.RUBYGEMS_API_KEY}}
-          github_token: ${{secrets.GITHUB_TOKEN}}
+          gem build moonlogs-ruby.gemspec
+          gem push moonlogs-ruby-${{ github.event.client_payload.tag_version }}.gem
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
