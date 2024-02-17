@@ -21,7 +21,7 @@ jobs:
 
       - name: Download Swagger Codegen
         run: |
-         wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.27/swagger-codegen-cli-3.0.27.jar -O swagger-codegen-cli.jar
+         wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.52/swagger-codegen-cli-3.0.52.jar -O swagger-codegen-cli.jar
 
       - name: Install Java
         uses: actions/setup-java@v2
