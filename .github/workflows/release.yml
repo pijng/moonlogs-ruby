@@ -47,8 +47,8 @@ jobs:
 
       - name: Build Gem
         run: |
-          gem build moonlogs-ruby/moonlogs-ruby.gemspec
+          gem build moonlogs-ruby/moonlogs-ruby/moonlogs-ruby.gemspec
 
       - name: Publish Gem to RubyGems
         run: |
-          gem push moonlogs-ruby-*.gem
+          gem push moonlogs-ruby/moonlogs-ruby/moonlogs-ruby-*.gem
