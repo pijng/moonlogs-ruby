@@ -1,3 +1,6 @@
+[![Generate and Publish Ruby Client](https://github.com/pijng/moonlogs-ruby/actions/workflows/release.yml/badge.svg)](https://github.com/pijng/moonlogs-ruby/actions/workflows/release.yml)
+
+
 # moonlogs-ruby client
 
 The moonlogs-ruby client provides a convenient way to interact with the moonlogs API in Ruby applications. It is generated from the Moonlogs OpenAPI specification using Swagger Codegen.
