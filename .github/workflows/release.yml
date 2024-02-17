@@ -12,9 +12,6 @@ jobs:
   generate-and-publish-client:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
       - name: Download Swagger YAML
         run: |
           curl -sSLo swagger.yaml https://raw.githubusercontent.com/pijng/moonlogs/master/internal/api/swagger.yaml
@@ -33,10 +30,14 @@ jobs:
         run: |
           java -jar swagger-codegen-cli.jar generate -i swagger.yaml -l ruby -o moonlogs-ruby --additional-properties gemName=moonlogs-ruby gemVersion=${{ github.event.client_payload.tag_version }}
 
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
 
       - name: Publish gem
         uses: dawidd6/action-publish-gem@v1
