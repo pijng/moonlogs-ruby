@@ -49,12 +49,6 @@ jobs:
         with:
           ruby-version: 2.7
 
-      - name: Install Bundler
-        run: gem install bundler
-
-      - name: Install Gem Dependencies
-        run: bundle install
-
       - name: Build and publish Gem
         run: |
           cd moonlogs-ruby
