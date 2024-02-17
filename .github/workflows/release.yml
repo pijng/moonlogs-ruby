@@ -33,18 +33,10 @@ jobs:
         run: |
           java -jar swagger-codegen-cli.jar generate -i swagger.yaml -l ruby -o moonlogs-ruby --additional-properties gemName=moonlogs-ruby gemVersion=${{ github.event.client_payload.tag_version }}
 
-      - name: Add Generated Files to Git
-        run: |
-          cd moonlogs-ruby
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git add .
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Commit & Push changes
+        uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
 
       - name: Publish gem
         uses: dawidd6/action-publish-gem@v1
