@@ -40,9 +40,10 @@ jobs:
           git commit -m "Update client to v${{ github.event.client_payload.tag_version }}" -a
 
       - name: Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: ad-m/github-push-action@v0.7.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
 
       - name: Build Gem
