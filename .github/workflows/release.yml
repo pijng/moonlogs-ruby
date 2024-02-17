@@ -15,6 +15,13 @@ jobs:
         run: |
           curl -sSLo swagger.yaml https://raw.githubusercontent.com/pijng/moonlogs/master/internal/api/swagger.yaml
 
+      - name: Install Swagger Codegen
+        run: |
+          wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.27/swagger-codegen-cli-3.0.27.jar -O swagger-codegen-cli.jar
+          sudo mv swagger-codegen-cli.jar /usr/local/bin/swagger-codegen-cli.jar
+          echo '#!/bin/sh\njava -jar /usr/local/bin/swagger-codegen-cli.jar "$@"' | sudo tee -a /usr/local/bin/swagger-codegen
+          sudo chmod +x /usr/local/bin/swagger-codegen
+
       - name: Generate Ruby Client
         run: |
           swagger-codegen generate -i swagger.yaml -l ruby -o moonlogs-ruby --additional-properties gemName=moonlogs-ruby gemVersion=${{ github.event.client_payload.tag_version }}
