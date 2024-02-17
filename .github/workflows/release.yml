@@ -1,0 +1,44 @@
+name: Generate and Publish Ruby Client
+
+on:
+  repository_dispatch:
+    types: [generate-publish-client]
+
+jobs:
+  generate-and-publish-client:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Swagger YAML
+        run: |
+          curl -sSLo swagger.yaml https://raw.githubusercontent.com/pijng/moonlogs/master/internal/api/swagger.yaml
+
+      - name: Generate Ruby Client
+        run: |
+          swagger-codegen generate -i swagger.yaml -l ruby -o moonlogs-ruby --additional-properties gemName=moonlogs-ruby gemVersion=${{ github.event.client_payload.tag_version }}
+
+      - name: Add Generated Files to Git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add moonlogs-ruby
+
+      - name: Commit Changes
+        run: |
+          git commit -m "Update client to v${{ github.event.client_payload.tag_version }}" -a
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@v0.7.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+      - name: Build Gem
+        run: |
+          gem build moonlogs-ruby/moonlogs-ruby.gemspec
+
+      - name: Publish Gem to RubyGems
+        run: |
+          gem push moonlogs-ruby-*.gem
