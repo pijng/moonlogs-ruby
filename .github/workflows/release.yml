@@ -35,11 +35,10 @@ jobs:
 
       - name: Add Generated Files to Git
         run: |
-          git status
-          ls
+          cd moonlogs-ruby
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          git add moonlogs-ruby/.
+          git add .
 
       - name: Push changes
         uses: ad-m/github-push-action@master
@@ -47,11 +46,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
 
-      - name: Build Gem
+      - name: Build and publish Gem
         run: |
-          ls moonlogs-ruby
           gem build moonlogs-ruby/moonlogs-ruby.gemspec
-
-      - name: Publish Gem to RubyGems
-        run: |
           gem push moonlogs-ruby/moonlogs-ruby-${{ github.event.client_payload.tag_version }}.gem
