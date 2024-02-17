@@ -15,16 +15,19 @@ jobs:
         run: |
           curl -sSLo swagger.yaml https://raw.githubusercontent.com/pijng/moonlogs/master/internal/api/swagger.yaml
 
-      - name: Install Swagger Codegen
+      - name: Download Swagger Codegen
         run: |
-          wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.27/swagger-codegen-cli-3.0.27.jar -O swagger-codegen-cli.jar
-          echo '#!/bin/sh\njava -jar $PWD/swagger-codegen-cli.jar "$@"' >> ~/swagger-codegen
-          chmod +x ~/swagger-codegen
-          sudo mv ~/swagger-codegen /usr/local/bin/swagger-codegen
+         wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.27/swagger-codegen-cli-3.0.27.jar -O swagger-codegen-cli.jar
+
+      - name: Install Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
 
       - name: Generate Ruby Client
         run: |
-          swagger-codegen generate -i swagger.yaml -l ruby -o moonlogs-ruby --additional-properties gemName=moonlogs-ruby gemVersion=${{ github.event.client_payload.tag_version }}
+          java -jar swagger-codegen-cli.jar generate -i swagger.yaml -l ruby -o moonlogs-ruby --additional-properties gemName=moonlogs-ruby gemVersion=${{ github.event.client_payload.tag_version }}
 
       - name: Add Generated Files to Git
         run: |
