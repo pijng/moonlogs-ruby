@@ -44,9 +44,6 @@ jobs:
           force: true
           branch: master
 
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
