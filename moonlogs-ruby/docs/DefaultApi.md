@@ -420,7 +420,7 @@ end
 
 api_instance = MoonlogsRuby::DefaultApi.new
 opts = { 
-  body: MoonlogsRuby::Record.new # Record | 
+  body: MoonlogsRuby::RecordRequest.new # RecordRequest | 
 }
 
 begin
@@ -435,7 +435,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Record**](Record.md)|  | [optional] 
+ **body** | [**RecordRequest**](RecordRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -467,7 +467,7 @@ end
 
 api_instance = MoonlogsRuby::DefaultApi.new
 opts = { 
-  body: MoonlogsRuby::Record.new # Record | 
+  body: MoonlogsRuby::RecordRequest.new # RecordRequest | 
   page: 56 # Integer | 
   limit: 56 # Integer | 
   from: 'from_example' # String | Time in format \"YYYY-DD-MMTHH:SS\"
@@ -486,7 +486,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Record**](Record.md)|  | [optional] 
+ **body** | [**RecordRequest**](RecordRequest.md)|  | [optional] 
  **page** | **Integer**|  | [optional] 
  **limit** | **Integer**|  | [optional] 
  **from** | **String**| Time in format \&quot;YYYY-DD-MMTHH:SS\&quot; | [optional] 
