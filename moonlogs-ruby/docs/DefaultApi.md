@@ -656,7 +656,7 @@ end
 api_instance = MoonlogsRuby::DefaultApi.new
 id = 56 # Integer | 
 opts = { 
-  body: MoonlogsRuby::Schema.new # Schema | 
+  body: MoonlogsRuby::SchemaRequest.new # SchemaRequest | 
 }
 
 begin
@@ -672,7 +672,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  | 
- **body** | [**Schema**](Schema.md)|  | [optional] 
+ **body** | [**SchemaRequest**](SchemaRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -704,7 +704,7 @@ end
 
 api_instance = MoonlogsRuby::DefaultApi.new
 opts = { 
-  body: MoonlogsRuby::Schema.new # Schema | 
+  body: MoonlogsRuby::SchemaRequest.new # SchemaRequest | 
 }
 
 begin
@@ -719,7 +719,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Schema**](Schema.md)|  | [optional] 
+ **body** | [**SchemaRequest**](SchemaRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -819,7 +819,7 @@ No authorization required
 
 
 # **api_setup_register_admin_post**
-> User api_setup_register_admin_post(opts)
+> UserResponse api_setup_register_admin_post(opts)
 
 
 
@@ -830,7 +830,7 @@ require 'moonlogs-ruby'
 
 api_instance = MoonlogsRuby::DefaultApi.new
 opts = { 
-  body: MoonlogsRuby::User.new # User | 
+  body: MoonlogsRuby::UserResponse.new # UserResponse | 
 }
 
 begin
@@ -845,11 +845,11 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**User**](User.md)|  | [optional] 
+ **body** | [**UserResponse**](UserResponse.md)|  | [optional] 
 
 ### Return type
 
-[**User**](User.md)
+[**UserResponse**](UserResponse.md)
 
 ### Authorization
 
@@ -1240,7 +1240,7 @@ end
 api_instance = MoonlogsRuby::DefaultApi.new
 id = 56 # Integer | 
 opts = { 
-  body: MoonlogsRuby::User.new # User | 
+  body: MoonlogsRuby::UserRequest.new # UserRequest | 
 }
 
 begin
@@ -1256,7 +1256,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  | 
- **body** | [**User**](User.md)|  | [optional] 
+ **body** | [**UserRequest**](UserRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -1288,7 +1288,7 @@ end
 
 api_instance = MoonlogsRuby::DefaultApi.new
 opts = { 
-  body: MoonlogsRuby::User.new # User | 
+  body: MoonlogsRuby::UserRequest.new # UserRequest | 
 }
 
 begin
@@ -1303,7 +1303,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**User**](User.md)|  | [optional] 
+ **body** | [**UserRequest**](UserRequest.md)|  | [optional] 
 
 ### Return type
 

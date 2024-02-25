@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **success** | **BOOLEAN** |  | 
 **code** | **Integer** |  | 
 **error** | **String** |  | 
-**data** | [**Schema**](Schema.md) |  | 
+**data** | [**SchemaResponse**](SchemaResponse.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
 

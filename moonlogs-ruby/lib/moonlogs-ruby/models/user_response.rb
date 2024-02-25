@@ -12,36 +12,52 @@ Swagger Codegen version: 3.0.52
 require 'date'
 
 module MoonlogsRuby
-  class InlineResponse20011
-    attr_accessor :success
+  class UserResponse
+    attr_accessor :id
 
-    attr_accessor :code
+    attr_accessor :name
 
-    attr_accessor :error
+    attr_accessor :email
 
-    attr_accessor :data
+    attr_accessor :password
 
-    attr_accessor :meta
+    attr_accessor :password_digest
+
+    attr_accessor :role
+
+    attr_accessor :tags
+
+    attr_accessor :token
+
+    attr_accessor :is_revoked
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'success' => :'success',
-        :'code' => :'code',
-        :'error' => :'error',
-        :'data' => :'data',
-        :'meta' => :'meta'
+        :'id' => :'id',
+        :'name' => :'name',
+        :'email' => :'email',
+        :'password' => :'password',
+        :'password_digest' => :'password_digest',
+        :'role' => :'role',
+        :'tags' => :'tags',
+        :'token' => :'token',
+        :'is_revoked' => :'is_revoked'
       }
     end
 
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'success' => :'Object',
-        :'code' => :'Object',
-        :'error' => :'Object',
-        :'data' => :'Object',
-        :'meta' => :'Object'
+        :'id' => :'Object',
+        :'name' => :'Object',
+        :'email' => :'Object',
+        :'password' => :'Object',
+        :'password_digest' => :'Object',
+        :'role' => :'Object',
+        :'tags' => :'Object',
+        :'token' => :'Object',
+        :'is_revoked' => :'Object'
       }
     end
 
@@ -55,35 +71,53 @@ module MoonlogsRuby
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::InlineResponse20011` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::UserResponse` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::InlineResponse20011`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::UserResponse`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
 
-      if attributes.key?(:'success')
-        self.success = attributes[:'success']
+      if attributes.key?(:'id')
+        self.id = attributes[:'id']
       end
 
-      if attributes.key?(:'code')
-        self.code = attributes[:'code']
+      if attributes.key?(:'name')
+        self.name = attributes[:'name']
       end
 
-      if attributes.key?(:'error')
-        self.error = attributes[:'error']
+      if attributes.key?(:'email')
+        self.email = attributes[:'email']
       end
 
-      if attributes.key?(:'data')
-        self.data = attributes[:'data']
+      if attributes.key?(:'password')
+        self.password = attributes[:'password']
       end
 
-      if attributes.key?(:'meta')
-        self.meta = attributes[:'meta']
+      if attributes.key?(:'password_digest')
+        self.password_digest = attributes[:'password_digest']
+      end
+
+      if attributes.key?(:'role')
+        self.role = attributes[:'role']
+      end
+
+      if attributes.key?(:'tags')
+        if (value = attributes[:'tags']).is_a?(Array)
+          self.tags = value
+        end
+      end
+
+      if attributes.key?(:'token')
+        self.token = attributes[:'token']
+      end
+
+      if attributes.key?(:'is_revoked')
+        self.is_revoked = attributes[:'is_revoked']
       end
     end
 
@@ -91,24 +125,32 @@ module MoonlogsRuby
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @success.nil?
-        invalid_properties.push('invalid value for "success", success cannot be nil.')
+      if @id.nil?
+        invalid_properties.push('invalid value for "id", id cannot be nil.')
       end
 
-      if @code.nil?
-        invalid_properties.push('invalid value for "code", code cannot be nil.')
+      if @name.nil?
+        invalid_properties.push('invalid value for "name", name cannot be nil.')
       end
 
-      if @error.nil?
-        invalid_properties.push('invalid value for "error", error cannot be nil.')
+      if @email.nil?
+        invalid_properties.push('invalid value for "email", email cannot be nil.')
       end
 
-      if @data.nil?
-        invalid_properties.push('invalid value for "data", data cannot be nil.')
+      if @password.nil?
+        invalid_properties.push('invalid value for "password", password cannot be nil.')
       end
 
-      if @meta.nil?
-        invalid_properties.push('invalid value for "meta", meta cannot be nil.')
+      if @role.nil?
+        invalid_properties.push('invalid value for "role", role cannot be nil.')
+      end
+
+      if @tags.nil?
+        invalid_properties.push('invalid value for "tags", tags cannot be nil.')
+      end
+
+      if @is_revoked.nil?
+        invalid_properties.push('invalid value for "is_revoked", is_revoked cannot be nil.')
       end
 
       invalid_properties
@@ -117,11 +159,13 @@ module MoonlogsRuby
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @success.nil?
-      return false if @code.nil?
-      return false if @error.nil?
-      return false if @data.nil?
-      return false if @meta.nil?
+      return false if @id.nil?
+      return false if @name.nil?
+      return false if @email.nil?
+      return false if @password.nil?
+      return false if @role.nil?
+      return false if @tags.nil?
+      return false if @is_revoked.nil?
       true
     end
 
@@ -130,11 +174,15 @@ module MoonlogsRuby
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          success == o.success &&
-          code == o.code &&
-          error == o.error &&
-          data == o.data &&
-          meta == o.meta
+          id == o.id &&
+          name == o.name &&
+          email == o.email &&
+          password == o.password &&
+          password_digest == o.password_digest &&
+          role == o.role &&
+          tags == o.tags &&
+          token == o.token &&
+          is_revoked == o.is_revoked
     end
 
     # @see the `==` method
@@ -146,7 +194,7 @@ module MoonlogsRuby
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [success, code, error, data, meta].hash
+      [id, name, email, password, password_digest, role, tags, token, is_revoked].hash
     end
 
     # Builds the object from hash
