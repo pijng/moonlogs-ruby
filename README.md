@@ -113,9 +113,9 @@ module Logging
         record[:kind] = kind if kind.present?
         record[:query].merge!({ time: unique_op }) if unique_op.present?
 
-        body = MoonlogsRuby::Record.new(**record)
+        body = MoonlogsRuby::RecordRequest.new(**record)
 
-        client.api_logs_post({ body: body })
+        client.create_log({ body: body })
       rescue MoonlogsRuby::ApiError => e
         # handle exception
       rescue StandardError => e
@@ -126,9 +126,9 @@ module Logging
         schema = MoonlogsSchemas::SCHEMAS[schema_name.to_sym]
         raise RuntimeError if schema.blank?
 
-        body = MoonlogsRuby::Schema.new(schema)
+        body = MoonlogsRuby::SchemaRequest.new(schema)
 
-        client.api_schemas_post({ body: body })
+        client.create_schema({ body: body })
       rescue MoonlogsRuby::ApiError => e
         # handle exception
       rescue StandardError => e
