@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **success** | **BOOLEAN** |  | 
 **code** | **Integer** |  | 
 **error** | **String** |  | 
-**data** | [**ApiToken**](ApiToken.md) |  | 
+**data** | [**ApiTokenResponse**](ApiTokenResponse.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
 

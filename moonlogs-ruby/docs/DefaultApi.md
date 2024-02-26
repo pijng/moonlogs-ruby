@@ -4,37 +4,37 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**api_api_tokens_get**](DefaultApi.md#api_api_tokens_get) | **GET** /api/api_tokens | 
-[**api_api_tokens_id_delete**](DefaultApi.md#api_api_tokens_id_delete) | **DELETE** /api/api_tokens/{id} | 
-[**api_api_tokens_id_get**](DefaultApi.md#api_api_tokens_id_get) | **GET** /api/api_tokens/{id} | 
-[**api_api_tokens_id_put**](DefaultApi.md#api_api_tokens_id_put) | **PUT** /api/api_tokens/{id} | 
-[**api_api_tokens_post**](DefaultApi.md#api_api_tokens_post) | **POST** /api/api_tokens | 
-[**api_logs_get**](DefaultApi.md#api_logs_get) | **GET** /api/logs | 
-[**api_logs_group_schema_name_hash_get**](DefaultApi.md#api_logs_group_schema_name_hash_get) | **GET** /api/logs/group/{schema_name}/{hash} | 
-[**api_logs_id_get**](DefaultApi.md#api_logs_id_get) | **GET** /api/logs/{id} | 
-[**api_logs_post**](DefaultApi.md#api_logs_post) | **POST** /api/logs | 
-[**api_logs_search_post**](DefaultApi.md#api_logs_search_post) | **POST** /api/logs/search | 
-[**api_schemas_get**](DefaultApi.md#api_schemas_get) | **GET** /api/schemas | 
-[**api_schemas_id_delete**](DefaultApi.md#api_schemas_id_delete) | **DELETE** /api/schemas/{id} | 
-[**api_schemas_id_get**](DefaultApi.md#api_schemas_id_get) | **GET** /api/schemas/{id} | 
-[**api_schemas_id_put**](DefaultApi.md#api_schemas_id_put) | **PUT** /api/schemas/{id} | 
-[**api_schemas_post**](DefaultApi.md#api_schemas_post) | **POST** /api/schemas | 
-[**api_session_get**](DefaultApi.md#api_session_get) | **GET** /api/session | 
-[**api_session_post**](DefaultApi.md#api_session_post) | **POST** /api/session | 
-[**api_setup_register_admin_post**](DefaultApi.md#api_setup_register_admin_post) | **POST** /api/setup/register_admin | 
-[**api_tags_get**](DefaultApi.md#api_tags_get) | **GET** /api/tags | 
-[**api_tags_id_delete**](DefaultApi.md#api_tags_id_delete) | **DELETE** /api/tags/{id} | 
-[**api_tags_id_get**](DefaultApi.md#api_tags_id_get) | **GET** /api/tags/{id} | 
-[**api_tags_id_put**](DefaultApi.md#api_tags_id_put) | **PUT** /api/tags/{id} | 
-[**api_tags_post**](DefaultApi.md#api_tags_post) | **POST** /api/tags | 
-[**api_users_get**](DefaultApi.md#api_users_get) | **GET** /api/users | 
-[**api_users_id_delete**](DefaultApi.md#api_users_id_delete) | **DELETE** /api/users/{id} | 
-[**api_users_id_get**](DefaultApi.md#api_users_id_get) | **GET** /api/users/{id} | 
-[**api_users_id_put**](DefaultApi.md#api_users_id_put) | **PUT** /api/users/{id} | 
-[**api_users_post**](DefaultApi.md#api_users_post) | **POST** /api/users | 
+[**create_log**](DefaultApi.md#create_log) | **POST** /api/logs | 
+[**create_schema**](DefaultApi.md#create_schema) | **POST** /api/schemas | 
+[**create_session**](DefaultApi.md#create_session) | **POST** /api/session | 
+[**create_tag**](DefaultApi.md#create_tag) | **POST** /api/tags | 
+[**create_token**](DefaultApi.md#create_token) | **POST** /api/api_tokens | 
+[**create_user**](DefaultApi.md#create_user) | **POST** /api/users | 
+[**delete_schema_by_id**](DefaultApi.md#delete_schema_by_id) | **DELETE** /api/schemas/{id} | 
+[**delete_tag_by_id**](DefaultApi.md#delete_tag_by_id) | **DELETE** /api/tags/{id} | 
+[**delete_token_by_id**](DefaultApi.md#delete_token_by_id) | **DELETE** /api/api_tokens/{id} | 
+[**delete_user_by_id**](DefaultApi.md#delete_user_by_id) | **DELETE** /api/users/{id} | 
+[**get_log**](DefaultApi.md#get_log) | **GET** /api/logs | 
+[**get_log_by_id**](DefaultApi.md#get_log_by_id) | **GET** /api/logs/{id} | 
+[**get_logs_by_schema_and_hash**](DefaultApi.md#get_logs_by_schema_and_hash) | **GET** /api/logs/group/{schema_name}/{hash} | 
+[**get_schema_by_id**](DefaultApi.md#get_schema_by_id) | **GET** /api/schemas/{id} | 
+[**get_schemas**](DefaultApi.md#get_schemas) | **GET** /api/schemas | 
+[**get_session**](DefaultApi.md#get_session) | **GET** /api/session | 
+[**get_tag_by_id**](DefaultApi.md#get_tag_by_id) | **GET** /api/tags/{id} | 
+[**get_tags**](DefaultApi.md#get_tags) | **GET** /api/tags | 
+[**get_token_by_id**](DefaultApi.md#get_token_by_id) | **GET** /api/api_tokens/{id} | 
+[**get_tokens**](DefaultApi.md#get_tokens) | **GET** /api/api_tokens | 
+[**get_user_by_id**](DefaultApi.md#get_user_by_id) | **GET** /api/users/{id} | 
+[**get_users**](DefaultApi.md#get_users) | **GET** /api/users | 
+[**register_admin**](DefaultApi.md#register_admin) | **POST** /api/setup/register_admin | 
+[**search_logs**](DefaultApi.md#search_logs) | **POST** /api/logs/search | 
+[**update_schema_by_id**](DefaultApi.md#update_schema_by_id) | **PUT** /api/schemas/{id} | 
+[**update_tag_by_id**](DefaultApi.md#update_tag_by_id) | **PUT** /api/tags/{id} | 
+[**update_token_by_id**](DefaultApi.md#update_token_by_id) | **PUT** /api/api_tokens/{id} | 
+[**update_user_by_id**](DefaultApi.md#update_user_by_id) | **PUT** /api/users/{id} | 
 
-# **api_api_tokens_get**
-> InlineResponse2009 api_api_tokens_get
+# **create_log**
+> InlineResponse2004 create_log(opts)
 
 
 
@@ -47,21 +47,27 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::RecordRequest.new # RecordRequest | 
+}
 
 begin
-  result = api_instance.api_api_tokens_get
+  result = api_instance.create_log(opts)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_api_tokens_get: #{e}"
+  puts "Exception when calling DefaultApi->create_log: #{e}"
 end
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**RecordRequest**](RecordRequest.md)|  | [optional] 
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -69,13 +75,245 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
 
-# **api_api_tokens_id_delete**
-> InlineResponse20011 api_api_tokens_id_delete(id)
+# **create_schema**
+> InlineResponse2001 create_schema(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::SchemaRequest.new # SchemaRequest | 
+}
+
+begin
+  result = api_instance.create_schema(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->create_schema: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SchemaRequest**](SchemaRequest.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse2001**](InlineResponse2001.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **create_session**
+> InlineResponse2008 create_session(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::Credentials.new # Credentials | 
+}
+
+begin
+  result = api_instance.create_session(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->create_session: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**Credentials**](Credentials.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse2008**](InlineResponse2008.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **create_tag**
+> InlineResponse20013 create_tag(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::TagRequest.new # TagRequest | 
+}
+
+begin
+  result = api_instance.create_tag(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->create_tag: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**TagRequest**](TagRequest.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse20013**](InlineResponse20013.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **create_token**
+> InlineResponse20010 create_token(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::ApiTokenRequest.new # ApiTokenRequest | 
+}
+
+begin
+  result = api_instance.create_token(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->create_token: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ApiTokenRequest**](ApiTokenRequest.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse20010**](InlineResponse20010.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **create_user**
+> InlineResponse2006 create_user(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::UserRequest.new # UserRequest | 
+}
+
+begin
+  result = api_instance.create_user(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->create_user: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UserRequest**](UserRequest.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse2006**](InlineResponse2006.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **delete_schema_by_id**
+> InlineResponse2002 delete_schema_by_id(id)
 
 
 
@@ -92,10 +330,56 @@ id = 56 # Integer |
 
 
 begin
-  result = api_instance.api_api_tokens_id_delete(id)
+  result = api_instance.delete_schema_by_id(id)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_api_tokens_id_delete: #{e}"
+  puts "Exception when calling DefaultApi->delete_schema_by_id: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
+
+### Return type
+
+[**InlineResponse2002**](InlineResponse2002.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **delete_tag_by_id**
+> InlineResponse20011 delete_tag_by_id(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.delete_tag_by_id(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->delete_tag_by_id: #{e}"
 end
 ```
 
@@ -120,8 +404,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_api_tokens_id_get**
-> InlineResponse20010 api_api_tokens_id_get(id)
+# **delete_token_by_id**
+> InlineResponse20011 delete_token_by_id(id)
 
 
 
@@ -138,10 +422,10 @@ id = 56 # Integer |
 
 
 begin
-  result = api_instance.api_api_tokens_id_get(id)
+  result = api_instance.delete_token_by_id(id)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_api_tokens_id_get: #{e}"
+  puts "Exception when calling DefaultApi->delete_token_by_id: #{e}"
 end
 ```
 
@@ -153,7 +437,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 
@@ -166,8 +450,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_api_tokens_id_put**
-> InlineResponse20010 api_api_tokens_id_put(id, opts)
+# **delete_user_by_id**
+> InlineResponse2007 delete_user_by_id(id)
 
 
 
@@ -181,15 +465,13 @@ end
 
 api_instance = MoonlogsRuby::DefaultApi.new
 id = 56 # Integer | 
-opts = { 
-  body: MoonlogsRuby::ApiToken.new # ApiToken | 
-}
+
 
 begin
-  result = api_instance.api_api_tokens_id_put(id, opts)
+  result = api_instance.delete_user_by_id(id)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_api_tokens_id_put: #{e}"
+  puts "Exception when calling DefaultApi->delete_user_by_id: #{e}"
 end
 ```
 
@@ -198,11 +480,10 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  | 
- **body** | [**ApiToken**](ApiToken.md)|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 
@@ -210,60 +491,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 
-# **api_api_tokens_post**
-> InlineResponse20010 api_api_tokens_post(opts)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::ApiToken.new # ApiToken | 
-}
-
-begin
-  result = api_instance.api_api_tokens_post(opts)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_api_tokens_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**ApiToken**](ApiToken.md)|  | [optional] 
-
-### Return type
-
-[**InlineResponse20010**](InlineResponse20010.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **api_logs_get**
-> InlineResponse2003 api_logs_get(opts)
+# **get_log**
+> InlineResponse2003 get_log(opts)
 
 
 
@@ -282,10 +516,10 @@ opts = {
 }
 
 begin
-  result = api_instance.api_logs_get(opts)
+  result = api_instance.get_log(opts)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_logs_get: #{e}"
+  puts "Exception when calling DefaultApi->get_log: #{e}"
 end
 ```
 
@@ -311,8 +545,54 @@ Name | Type | Description  | Notes
 
 
 
-# **api_logs_group_schema_name_hash_get**
-> InlineResponse2003 api_logs_group_schema_name_hash_get(schema_name, hash)
+# **get_log_by_id**
+> InlineResponse2004 get_log_by_id(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.get_log_by_id(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_log_by_id: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
+
+### Return type
+
+[**InlineResponse2004**](InlineResponse2004.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_logs_by_schema_and_hash**
+> InlineResponse2003 get_logs_by_schema_and_hash(schema_name, hash)
 
 
 
@@ -330,10 +610,10 @@ hash = 'hash_example' # String |
 
 
 begin
-  result = api_instance.api_logs_group_schema_name_hash_get(schema_name, hash)
+  result = api_instance.get_logs_by_schema_and_hash(schema_name, hash)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_logs_group_schema_name_hash_get: #{e}"
+  puts "Exception when calling DefaultApi->get_logs_by_schema_and_hash: #{e}"
 end
 ```
 
@@ -359,8 +639,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_logs_id_get**
-> InlineResponse2004 api_logs_id_get(id)
+# **get_schema_by_id**
+> InlineResponse2001 get_schema_by_id(id)
 
 
 
@@ -377,10 +657,10 @@ id = 56 # Integer |
 
 
 begin
-  result = api_instance.api_logs_id_get(id)
+  result = api_instance.get_schema_by_id(id)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_logs_id_get: #{e}"
+  puts "Exception when calling DefaultApi->get_schema_by_id: #{e}"
 end
 ```
 
@@ -392,7 +672,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -405,8 +685,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_logs_post**
-> InlineResponse2004 api_logs_post(opts)
+# **get_schemas**
+> InlineResponse200 get_schemas
 
 
 
@@ -419,15 +699,93 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::RecordRequest.new # RecordRequest | 
-}
 
 begin
-  result = api_instance.api_logs_post(opts)
+  result = api_instance.get_schemas
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_logs_post: #{e}"
+  puts "Exception when calling DefaultApi->get_schemas: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse200**](InlineResponse200.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_session**
+> InlineResponse2008 get_session
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+
+api_instance = MoonlogsRuby::DefaultApi.new
+
+begin
+  result = api_instance.get_session
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_session: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse2008**](InlineResponse2008.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_tag_by_id**
+> InlineResponse20013 get_tag_by_id(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.get_tag_by_id(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_tag_by_id: #{e}"
 end
 ```
 
@@ -435,15 +793,274 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RecordRequest**](RecordRequest.md)|  | [optional] 
+ **id** | **Integer**|  | 
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
 [http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_tags**
+> InlineResponse20012 get_tags
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+
+begin
+  result = api_instance.get_tags
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_tags: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse20012**](InlineResponse20012.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_token_by_id**
+> InlineResponse20010 get_token_by_id(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.get_token_by_id(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_token_by_id: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
+
+### Return type
+
+[**InlineResponse20010**](InlineResponse20010.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_tokens**
+> InlineResponse2009 get_tokens
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+
+begin
+  result = api_instance.get_tokens
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_tokens: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse2009**](InlineResponse2009.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_user_by_id**
+> InlineResponse2006 get_user_by_id(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.get_user_by_id(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_user_by_id: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
+
+### Return type
+
+[**InlineResponse2006**](InlineResponse2006.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_users**
+> InlineResponse2005 get_users
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+
+begin
+  result = api_instance.get_users
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_users: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**InlineResponse2005**](InlineResponse2005.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **register_admin**
+> UserResponse register_admin(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::UserRequest.new # UserRequest | 
+}
+
+begin
+  result = api_instance.register_admin(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->register_admin: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UserRequest**](UserRequest.md)|  | [optional] 
+
+### Return type
+
+[**UserResponse**](UserResponse.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 
@@ -452,8 +1069,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_logs_search_post**
-> InlineResponse2003 api_logs_search_post(opts)
+# **search_logs**
+> InlineResponse2003 search_logs(opts)
 
 
 
@@ -475,10 +1092,10 @@ opts = {
 }
 
 begin
-  result = api_instance.api_logs_search_post(opts)
+  result = api_instance.search_logs(opts)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_logs_search_post: #{e}"
+  puts "Exception when calling DefaultApi->search_logs: #{e}"
 end
 ```
 
@@ -507,141 +1124,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_schemas_get**
-> InlineResponse200 api_schemas_get
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-
-begin
-  result = api_instance.api_schemas_get
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_schemas_get: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**InlineResponse200**](InlineResponse200.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_schemas_id_delete**
-> InlineResponse2002 api_schemas_id_delete(id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-
-
-begin
-  result = api_instance.api_schemas_id_delete(id)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_schemas_id_delete: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  | 
-
-### Return type
-
-[**InlineResponse2002**](InlineResponse2002.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_schemas_id_get**
-> InlineResponse2001 api_schemas_id_get(id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-
-
-begin
-  result = api_instance.api_schemas_id_get(id)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_schemas_id_get: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  | 
-
-### Return type
-
-[**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_schemas_id_put**
-> InlineResponse2001 api_schemas_id_put(id, opts)
+# **update_schema_by_id**
+> InlineResponse2001 update_schema_by_id(id, opts)
 
 
 
@@ -660,10 +1144,10 @@ opts = {
 }
 
 begin
-  result = api_instance.api_schemas_id_put(id, opts)
+  result = api_instance.update_schema_by_id(id, opts)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_schemas_id_put: #{e}"
+  puts "Exception when calling DefaultApi->update_schema_by_id: #{e}"
 end
 ```
 
@@ -689,314 +1173,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_schemas_post**
-> InlineResponse2001 api_schemas_post(opts)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::SchemaRequest.new # SchemaRequest | 
-}
-
-begin
-  result = api_instance.api_schemas_post(opts)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_schemas_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**SchemaRequest**](SchemaRequest.md)|  | [optional] 
-
-### Return type
-
-[**InlineResponse2001**](InlineResponse2001.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **api_session_get**
-> InlineResponse2008 api_session_get
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-
-api_instance = MoonlogsRuby::DefaultApi.new
-
-begin
-  result = api_instance.api_session_get
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_session_get: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**InlineResponse2008**](InlineResponse2008.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_session_post**
-> InlineResponse2008 api_session_post(opts)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-
-api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::Credentials.new # Credentials | 
-}
-
-begin
-  result = api_instance.api_session_post(opts)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_session_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**Credentials**](Credentials.md)|  | [optional] 
-
-### Return type
-
-[**InlineResponse2008**](InlineResponse2008.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **api_setup_register_admin_post**
-> UserResponse api_setup_register_admin_post(opts)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-
-api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::UserResponse.new # UserResponse | 
-}
-
-begin
-  result = api_instance.api_setup_register_admin_post(opts)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_setup_register_admin_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**UserResponse**](UserResponse.md)|  | [optional] 
-
-### Return type
-
-[**UserResponse**](UserResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **api_tags_get**
-> InlineResponse20012 api_tags_get
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-
-begin
-  result = api_instance.api_tags_get
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_tags_get: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**InlineResponse20012**](InlineResponse20012.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_tags_id_delete**
-> InlineResponse20011 api_tags_id_delete(id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-
-
-begin
-  result = api_instance.api_tags_id_delete(id)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_tags_id_delete: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  | 
-
-### Return type
-
-[**InlineResponse20011**](InlineResponse20011.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_tags_id_get**
-> InlineResponse20013 api_tags_id_get(id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-
-
-begin
-  result = api_instance.api_tags_id_get(id)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_tags_id_get: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  | 
-
-### Return type
-
-[**InlineResponse20013**](InlineResponse20013.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_tags_id_put**
-> InlineResponse20013 api_tags_id_put(id, opts)
+# **update_tag_by_id**
+> InlineResponse20013 update_tag_by_id(id, opts)
 
 
 
@@ -1011,14 +1189,14 @@ end
 api_instance = MoonlogsRuby::DefaultApi.new
 id = 56 # Integer | 
 opts = { 
-  body: MoonlogsRuby::Tag.new # Tag | 
+  body: MoonlogsRuby::TagRequest.new # TagRequest | 
 }
 
 begin
-  result = api_instance.api_tags_id_put(id, opts)
+  result = api_instance.update_tag_by_id(id, opts)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_tags_id_put: #{e}"
+  puts "Exception when calling DefaultApi->update_tag_by_id: #{e}"
 end
 ```
 
@@ -1027,7 +1205,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  | 
- **body** | [**Tag**](Tag.md)|  | [optional] 
+ **body** | [**TagRequest**](TagRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -1044,8 +1222,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_tags_post**
-> InlineResponse20013 api_tags_post(opts)
+# **update_token_by_id**
+> InlineResponse20010 update_token_by_id(id, opts)
 
 
 
@@ -1058,15 +1236,16 @@ MoonlogsRuby.configure do |config|
 end
 
 api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
 opts = { 
-  body: MoonlogsRuby::Tag.new # Tag | 
+  body: MoonlogsRuby::ApiTokenRequest.new # ApiTokenRequest | 
 }
 
 begin
-  result = api_instance.api_tags_post(opts)
+  result = api_instance.update_token_by_id(id, opts)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_tags_post: #{e}"
+  puts "Exception when calling DefaultApi->update_token_by_id: #{e}"
 end
 ```
 
@@ -1074,11 +1253,12 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Tag**](Tag.md)|  | [optional] 
+ **id** | **Integer**|  | 
+ **body** | [**ApiTokenRequest**](ApiTokenRequest.md)|  | [optional] 
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -1091,141 +1271,8 @@ Name | Type | Description  | Notes
 
 
 
-# **api_users_get**
-> InlineResponse2005 api_users_get
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-
-begin
-  result = api_instance.api_users_get
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_users_get: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**InlineResponse2005**](InlineResponse2005.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_users_id_delete**
-> InlineResponse2007 api_users_id_delete(id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-
-
-begin
-  result = api_instance.api_users_id_delete(id)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_users_id_delete: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  | 
-
-### Return type
-
-[**InlineResponse2007**](InlineResponse2007.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_users_id_get**
-> InlineResponse2006 api_users_id_get(id)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-id = 56 # Integer | 
-
-
-begin
-  result = api_instance.api_users_id_get(id)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_users_id_get: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **Integer**|  | 
-
-### Return type
-
-[**InlineResponse2006**](InlineResponse2006.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-
-# **api_users_id_put**
-> InlineResponse2006 api_users_id_put(id, opts)
+# **update_user_by_id**
+> InlineResponse2006 update_user_by_id(id, opts)
 
 
 
@@ -1244,10 +1291,10 @@ opts = {
 }
 
 begin
-  result = api_instance.api_users_id_put(id, opts)
+  result = api_instance.update_user_by_id(id, opts)
   p result
 rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_users_id_put: #{e}"
+  puts "Exception when calling DefaultApi->update_user_by_id: #{e}"
 end
 ```
 
@@ -1256,53 +1303,6 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Integer**|  | 
- **body** | [**UserRequest**](UserRequest.md)|  | [optional] 
-
-### Return type
-
-[**InlineResponse2006**](InlineResponse2006.md)
-
-### Authorization
-
-[http1](../README.md#http1)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **api_users_post**
-> InlineResponse2006 api_users_post(opts)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'moonlogs-ruby'
-# setup authorization
-MoonlogsRuby.configure do |config|
-end
-
-api_instance = MoonlogsRuby::DefaultApi.new
-opts = { 
-  body: MoonlogsRuby::UserRequest.new # UserRequest | 
-}
-
-begin
-  result = api_instance.api_users_post(opts)
-  p result
-rescue MoonlogsRuby::ApiError => e
-  puts "Exception when calling DefaultApi->api_users_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
  **body** | [**UserRequest**](UserRequest.md)|  | [optional] 
 
 ### Return type

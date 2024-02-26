@@ -9,5 +9,6 @@ Name | Type | Description | Notes
 **fields** | [**Array&lt;SchemaField&gt;**](SchemaField.md) |  | 
 **kinds** | [**Array&lt;SchemaKind&gt;**](SchemaKind.md) |  | [optional] 
 **tag_id** | **Integer** |  | [optional] 
+**tag_name** | **String** |  | [optional] 
 **retention_days** | **Integer** |  | [optional] 
 

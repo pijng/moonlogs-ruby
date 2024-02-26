@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **success** | **BOOLEAN** |  | 
 **code** | **Integer** |  | 
 **error** | **String** |  | 
-**data** | [**Tag**](Tag.md) |  | 
+**data** | [**TagResponse**](TagResponse.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
 
