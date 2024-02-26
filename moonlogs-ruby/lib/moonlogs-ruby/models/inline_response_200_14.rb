@@ -12,7 +12,7 @@ Swagger Codegen version: 3.0.52
 require 'date'
 
 module MoonlogsRuby
-  class InlineResponse20013
+  class InlineResponse20014
     attr_accessor :success
 
     attr_accessor :code
@@ -55,13 +55,13 @@ module MoonlogsRuby
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::InlineResponse20013` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::InlineResponse20014` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::InlineResponse20013`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::InlineResponse20014`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }

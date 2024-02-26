@@ -5,6 +5,7 @@ All URIs are relative to */*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_log**](DefaultApi.md#create_log) | **POST** /api/logs | 
+[**create_log_async**](DefaultApi.md#create_log_async) | **POST** /api/logs/async | 
 [**create_schema**](DefaultApi.md#create_schema) | **POST** /api/schemas | 
 [**create_session**](DefaultApi.md#create_session) | **POST** /api/session | 
 [**create_tag**](DefaultApi.md#create_tag) | **POST** /api/tags | 
@@ -68,6 +69,53 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2004**](InlineResponse2004.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **create_log_async**
+> InlineResponse20014 create_log_async(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::RecordRequest.new # RecordRequest | 
+}
+
+begin
+  result = api_instance.create_log_async(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->create_log_async: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**RecordRequest**](RecordRequest.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 
