@@ -8,6 +8,8 @@ Name | Type | Description | Notes
 **schema_name** | **String** |  | 
 **schema_id** | **Integer** |  | 
 **query** | **Object** |  | 
+**request** | **Object** |  | 
+**response** | **Object** |  | 
 **kind** | **String** |  | 
 **created_at** | **String** |  | 
 **group_hash** | **String** |  | 

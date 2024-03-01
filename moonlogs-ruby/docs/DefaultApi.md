@@ -17,6 +17,8 @@ Method | HTTP request | Description
 [**delete_user_by_id**](DefaultApi.md#delete_user_by_id) | **DELETE** /api/users/{id} | 
 [**get_log**](DefaultApi.md#get_log) | **GET** /api/logs | 
 [**get_log_by_id**](DefaultApi.md#get_log_by_id) | **GET** /api/logs/{id} | 
+[**get_log_request_by_id**](DefaultApi.md#get_log_request_by_id) | **GET** /api/logs/{id}/request | 
+[**get_log_response_by_id**](DefaultApi.md#get_log_response_by_id) | **GET** /api/logs/{id}/response | 
 [**get_logs_by_schema_and_hash**](DefaultApi.md#get_logs_by_schema_and_hash) | **GET** /api/logs/group/{schema_name}/{hash} | 
 [**get_schema_by_id**](DefaultApi.md#get_schema_by_id) | **GET** /api/schemas/{id} | 
 [**get_schemas**](DefaultApi.md#get_schemas) | **GET** /api/schemas | 
@@ -627,6 +629,98 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2004**](InlineResponse2004.md)
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_log_request_by_id**
+> Object get_log_request_by_id(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.get_log_request_by_id(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_log_request_by_id: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[http1](../README.md#http1)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+# **get_log_response_by_id**
+> Object get_log_response_by_id(id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+id = 56 # Integer | 
+
+
+begin
+  result = api_instance.get_log_response_by_id(id)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->get_log_response_by_id: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Integer**|  | 
+
+### Return type
+
+**Object**
 
 ### Authorization
 
