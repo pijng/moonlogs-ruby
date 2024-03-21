@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **request** | **Object** |  | 
 **response** | **Object** |  | 
 **kind** | **String** |  | 
-**created_at** | **String** |  | 
+**created_at** | **String** | ISO8601 date-time | 
 **group_hash** | **String** |  | 
 **level** | [**OneOfRecordResponseLevel**](OneOfRecordResponseLevel.md) |  | 
 
