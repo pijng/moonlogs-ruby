@@ -12,4 +12,5 @@ Name | Type | Description | Notes
 **response** | **Object** |  | [optional] 
 **kind** | **String** |  | [optional] 
 **level** | [**OneOfRecordRequestLevel**](OneOfRecordRequestLevel.md) |  | [optional] 
+**is_exposed** | **BOOLEAN** |  | [optional] 
 

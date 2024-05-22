@@ -14,4 +14,5 @@ Name | Type | Description | Notes
 **created_at** | **String** | ISO8601 date-time | 
 **group_hash** | **String** |  | 
 **level** | [**OneOfRecordResponseLevel**](OneOfRecordResponseLevel.md) |  | 
+**is_exposed** | **BOOLEAN** |  | 
 
