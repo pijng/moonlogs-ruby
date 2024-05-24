@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **method** | **String** |  | 
 **conditions** | [**Array&lt;Condition&gt;**](Condition.md) |  | 
 **schema_name** | **String** |  | 
-**schema_id** | **Integer** |  | 
+**schema_ids** | **Array&lt;Integer&gt;** |  | 
 **disabled** | **BOOLEAN** |  | 
 
