@@ -15,4 +15,6 @@ Name | Type | Description | Notes
 **group_hash** | **String** |  | 
 **level** | [**OneOfRecordResponseLevel**](OneOfRecordResponseLevel.md) |  | 
 **is_exposed** | **BOOLEAN** |  | 
+**old_value** | **String** |  | [optional] 
+**new_value** | **String** |  | [optional] 
 

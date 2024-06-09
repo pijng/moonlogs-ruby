@@ -13,4 +13,6 @@ Name | Type | Description | Notes
 **kind** | **String** |  | [optional] 
 **level** | [**OneOfRecordRequestLevel**](OneOfRecordRequestLevel.md) |  | [optional] 
 **is_exposed** | **BOOLEAN** |  | [optional] 
+**old_value** | **String** |  | [optional] 
+**new_value** | **String** |  | [optional] 
 
