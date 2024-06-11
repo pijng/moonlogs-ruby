@@ -1,4 +1,4 @@
-name: Generate and Publish Ruby Client
+name: Build Ruby SDK
 
 on:
   repository_dispatch:
@@ -31,7 +31,7 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
-      - name: Generate Ruby Client
+      - name: Build Ruby SdK
         run: |
           java -jar swagger-codegen-cli.jar generate -i swagger.yaml -l ruby -o moonlogs-ruby --additional-properties gemName=moonlogs-ruby gemVersion=${{ github.event.client_payload.tag_version }}
           rm swagger-codegen-cli.jar
