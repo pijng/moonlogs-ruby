@@ -17,4 +17,5 @@ Name | Type | Description | Notes
 **is_exposed** | **BOOLEAN** |  | 
 **old_value** | **String** |  | [optional] 
 **new_value** | **String** |  | [optional] 
+**changes** | **Object** |  | [optional] 
 
