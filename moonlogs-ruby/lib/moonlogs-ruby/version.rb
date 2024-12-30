@@ -10,5 +10,5 @@ Swagger Codegen version: 3.0.52
 =end
 
 module MoonlogsRuby
-  VERSION = '1.15.1'
+  VERSION = '1.16.0'
 end
