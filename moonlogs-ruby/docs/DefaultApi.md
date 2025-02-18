@@ -36,6 +36,7 @@ Method | HTTP request | Description
 [**get_user_by_id**](DefaultApi.md#get_user_by_id) | **GET** /api/users/{id} | 
 [**get_users**](DefaultApi.md#get_users) | **GET** /api/users | 
 [**register_admin**](DefaultApi.md#register_admin) | **POST** /api/setup/register_admin | 
+[**search_incidents**](DefaultApi.md#search_incidents) | **POST** /api/incidents/search | 
 [**search_logs**](DefaultApi.md#search_logs) | **POST** /api/logs/search | 
 [**update_action_by_id**](DefaultApi.md#update_action_by_id) | **PUT** /api/actions/{id} | 
 [**update_schema_by_id**](DefaultApi.md#update_schema_by_id) | **PUT** /api/schemas/{id} | 
@@ -1472,6 +1473,53 @@ Name | Type | Description  | Notes
 ### Authorization
 
 No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **search_incidents**
+> InlineResponse20020 search_incidents(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'moonlogs-ruby'
+# setup authorization
+MoonlogsRuby.configure do |config|
+end
+
+api_instance = MoonlogsRuby::DefaultApi.new
+opts = { 
+  body: MoonlogsRuby::IncidentSearchRequest.new # IncidentSearchRequest | 
+}
+
+begin
+  result = api_instance.search_incidents(opts)
+  p result
+rescue MoonlogsRuby::ApiError => e
+  puts "Exception when calling DefaultApi->search_incidents: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**IncidentSearchRequest**](IncidentSearchRequest.md)|  | [optional] 
+
+### Return type
+
+[**InlineResponse20020**](InlineResponse20020.md)
+
+### Authorization
+
+[http1](../README.md#http1)
 
 ### HTTP request headers
 

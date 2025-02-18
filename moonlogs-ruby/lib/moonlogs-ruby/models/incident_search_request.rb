@@ -12,44 +12,20 @@ Swagger Codegen version: 3.0.52
 require 'date'
 
 module MoonlogsRuby
-  class ActionRequest
-    attr_accessor :name
-
-    attr_accessor :pattern
-
-    attr_accessor :method
-
-    attr_accessor :conditions
-
-    attr_accessor :schema_name
-
-    attr_accessor :schema_ids
-
-    attr_accessor :disabled
+  class IncidentSearchRequest
+    attr_accessor :keys
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'name' => :'name',
-        :'pattern' => :'pattern',
-        :'method' => :'method',
-        :'conditions' => :'conditions',
-        :'schema_name' => :'schema_name',
-        :'schema_ids' => :'schema_ids',
-        :'disabled' => :'disabled'
+        :'keys' => :'keys'
       }
     end
 
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'name' => :'Object',
-        :'pattern' => :'Object',
-        :'method' => :'Object',
-        :'conditions' => :'Object',
-        :'schema_name' => :'Object',
-        :'schema_ids' => :'Object',
-        :'disabled' => :'Object'
+        :'keys' => :'Object'
       }
     end
 
@@ -63,47 +39,19 @@ module MoonlogsRuby
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::ActionRequest` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `MoonlogsRuby::IncidentSearchRequest` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::ActionRequest`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `MoonlogsRuby::IncidentSearchRequest`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
 
-      if attributes.key?(:'name')
-        self.name = attributes[:'name']
-      end
-
-      if attributes.key?(:'pattern')
-        self.pattern = attributes[:'pattern']
-      end
-
-      if attributes.key?(:'method')
-        self.method = attributes[:'method']
-      end
-
-      if attributes.key?(:'conditions')
-        if (value = attributes[:'conditions']).is_a?(Array)
-          self.conditions = value
-        end
-      end
-
-      if attributes.key?(:'schema_name')
-        self.schema_name = attributes[:'schema_name']
-      end
-
-      if attributes.key?(:'schema_ids')
-        if (value = attributes[:'schema_ids']).is_a?(Array)
-          self.schema_ids = value
-        end
-      end
-
-      if attributes.key?(:'disabled')
-        self.disabled = attributes[:'disabled']
+      if attributes.key?(:'keys')
+        self.keys = attributes[:'keys']
       end
     end
 
@@ -111,32 +59,12 @@ module MoonlogsRuby
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @name.nil?
-        invalid_properties.push('invalid value for "name", name cannot be nil.')
-      end
-
-      if @pattern.nil?
-        invalid_properties.push('invalid value for "pattern", pattern cannot be nil.')
-      end
-
-      if @method.nil?
-        invalid_properties.push('invalid value for "method", method cannot be nil.')
-      end
-
-      if @schema_name.nil?
-        invalid_properties.push('invalid value for "schema_name", schema_name cannot be nil.')
-      end
-
       invalid_properties
     end
 
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @name.nil?
-      return false if @pattern.nil?
-      return false if @method.nil?
-      return false if @schema_name.nil?
       true
     end
 
@@ -145,13 +73,7 @@ module MoonlogsRuby
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          name == o.name &&
-          pattern == o.pattern &&
-          method == o.method &&
-          conditions == o.conditions &&
-          schema_name == o.schema_name &&
-          schema_ids == o.schema_ids &&
-          disabled == o.disabled
+          keys == o.keys
     end
 
     # @see the `==` method
@@ -163,7 +85,7 @@ module MoonlogsRuby
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [name, pattern, method, conditions, schema_name, schema_ids, disabled].hash
+      [keys].hash
     end
 
     # Builds the object from hash
